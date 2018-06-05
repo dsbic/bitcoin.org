@@ -6,11 +6,6 @@ layout: base-core
 lang: en
 id: full-node
 title: "Running A Full Node - Bitcoin"
-end_of_page: |
-  <script>updateToc();</script>
-  <script>accordion();</script>
-  <script>onScrollButton();</script> 
-  <script>boxShow();</script> 
 breadcrumbs:
   - bitcoin
   - bcc
@@ -44,8 +39,8 @@ key](/laanwj.asc). That key's fingerprint is:
 
     71A3 B167 3540 5025 D447  E8F2 7481 0B01 2346 C9A6
 
-Even earlier releases were signed by Gavin Andresen's
-key. His primary key's fingerprint is:
+Even earlier releases were signed by [Gavin Andresen's
+key](/gavinandresen.asc). His primary key's fingerprint is:
 
     2664 6D99 CBAE C9B8 1982  EF60 29D9 EE6B 1FC7 30C1
 
@@ -98,35 +93,20 @@ Core running.
 
 -->
 
-<div class="hero">
-<div class="container hero-container" markdown="1">
-
 # Running A Full Node
-<p class="summary">Support the Bitcoin network by running your own full node</p>
-{% include helpers/hero-social.html %}
-</div>
-</div>
 
-<div class="toc-container">
-<div class="row toc-row">
+<p class="summary">Support the Bitcoin network by running your own full node</p>
+
 <div markdown="1" id="toc" class="toc"><div markdown="1">
-<button class="mob-sidebar-open" hidden>ALL TOPICS</button>
-<div class="sidebar">
-<div class="sidebar-inner" markdown="1">
-<button class="mob-sidebar-close" hidden></button>
 
 * Table of contents
 {:toc}
 
 <ul class="reportissue"><li><a href="https://github.com/bitcoin-dot-org/bitcoin.org/issues/new">Report An Issue</a></li></ul>
 <ul class="editsource"><li><a href="https://github.com/bitcoin-dot-org/bitcoin.org/tree/master/en/full-node.md">Edit On GitHub</a></li></ul>
-</div>
-</div>
 
 </div></div>
 <div markdown="1" class="toccontent">
-
-<div class="toccontent-intro" markdown="1">
 
 ## What Is A Full Node?
 
@@ -145,9 +125,6 @@ Many people and organizations volunteer to run full nodes using spare
 computing and bandwidth resources---but more volunteers are needed to
 allow Bitcoin to continue to grow.  This document describes how you can
 help and what helping will cost you.
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Costs And Warnings
 
@@ -216,16 +193,13 @@ have an easy-to-use node.
 ### Possible Problems
 
 {% include bitcoin-core/bitcoin-core-possible-problems.md %}
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Linux Instructions
 
 The following instructions describe installing Bitcoin Core on Linux
 systems.
 
-### Ubuntu 16.10
+### Ubuntu 16.04
 
 *Instructions for Bitcoin Core 0.14.2
 
@@ -582,9 +556,9 @@ If you're a expert system administrator and want to use an init script instead, 
 </div>
 
 {{installFinished}}
-</div>
 
-<div class="toccontent-block boxexpand expanded" markdown="1">
+
+
 
 ## Windows Instructions
 
@@ -696,14 +670,12 @@ Windows key (`⊞ Win`) and type "cmd".  Choose the option labeled
 If you installed Bitcoin Core into the default directory, type the
 following at the command prompt:
 
-    C:\Program Files\Bitcoin\daemon\bitcoind -daemon
+    C:\Program Files\Bitcoin\daemon\bitcoind
 
-Bitcoin Core daemon should start and print a message that Bitcoin Core is starting.
-
-To interact with Bitcoin Core daemon, you will use the command
-`bitcoin-cli` (Bitcoin command line interface).  If you installed Bitcoin
-Core into the default location, type the following at the command
-prompt to see whether it works:
+Bitcoin Core daemon should start. To interact with Bitcoin Core daemon, you will
+use the command `bitcoin-cli` (Bitcoin command line interface).  If you
+installed Bitcoin Core into the default location, type the following at the
+command prompt to see whether it works:
 
     C:\Program Files\Bitcoin\daemon\bitcoin-cli getblockchaininfo
 
@@ -731,7 +703,7 @@ Name the file `start_bitcoind.bat`. Then right-click on it and choose
 Open in Notepad (or whatever editor you prefer). Copy and paste the
 following line into the file.
 
-    C:\Program Files\Bitcoin\daemon\bitcoind -daemon
+    C:\Program Files\Bitcoin\daemon\bitcoind
 
 (If you installed Bitcoin Core in a non-default directory, use that
 directory path instead.)
@@ -852,14 +824,12 @@ Windows key (`⊞ Win`) and type "cmd".  Choose the option labeled
 If you installed Bitcoin Core into the default directory, type the
 following at the command prompt:
 
-    C:\Program Files\Bitcoin\daemon\bitcoind -daemon
+    C:\Program Files\Bitcoin\daemon\bitcoind
 
-Bitcoin Core daemon should start and print a message that Bitcoin Core is starting.
-
-To interact with Bitcoin Core daemon, you will use the command
-`bitcoin-cli` (Bitcoin command line interface).  If you installed Bitcoin
-Core into the default location, type the following at the command
-prompt to see whether it works:
+Bitcoin Core daemon should start. To interact with Bitcoin Core daemon, you will
+use the command `bitcoin-cli` (Bitcoin command line interface).  If you
+installed Bitcoin Core into the default location, type the following at the
+command prompt to see whether it works:
 
     C:\Program Files\Bitcoin\daemon\bitcoin-cli getblockchaininfo
 
@@ -887,7 +857,7 @@ Name the file `start_bitcoind.bat`. Then right-click on it and choose
 Open in Notepad (or whatever editor you prefer). Copy and paste the
 following line into the file.
 
-    C:\Program Files\Bitcoin\daemon\bitcoind -daemon
+    C:\Program Files\Bitcoin\daemon\bitcoind
 
 (If you installed Bitcoin Core in a non-default directory, use that
 directory path instead.)
@@ -995,6 +965,7 @@ automatically started minimized in the task bar.
 
 {{installFinished}}
 
+
 ##### Bitcoin Core Daemon {#win7-daemon}
 {:.no_toc}
 
@@ -1005,13 +976,13 @@ Windows key (`⊞ Win`) and type "cmd". Choose the program named "cmd.exe"
 
 If you installed the Bitcoin Core into the default directory, type the following at the command prompt :
 
-    C:\Program Files\Bitcoin\daemon\bitcoind -daemon
+    C:\Program Files\Bitcoin\daemon\bitcoind
 
-Bitcoin Core daemon should start.
+Bitcoin Core daemon should start. You can now try using Bitcoin Cli Utility.
 
-You can now try using Bitcoin Cli Utility.
-
-To interact with Bitcoin Core daemon, you will use the command `bitcoin-cli` (Bitcoin command line interface). If you installed Bitcoin Core into the default location, type the following at the command prompt to see whether it works:
+To interact with Bitcoin Core daemon, you will use the command `bitcoin-cli`
+(Bitcoin command line interface). If you installed Bitcoin Core into the default
+location, type the following at the command prompt to see whether it works:
 
     C:\Program Files\Bitcoin\daemon\bitcoin-cli getblockchaininfo
 
@@ -1046,7 +1017,7 @@ You can also access this folder by executing the following command after reachin
 
 Right-click on the File Explorer window and choose New → Text file. Name the file `start_bitcoind.bat`. Then right-click on it and choose Open in Notepad (or whatever editor you prefer). Copy and paste the following line into the file.
 
-    C:\Program Files\Bitcoin\daemon\bitcoind -daemon
+    C:\Program Files\Bitcoin\daemon\bitcoind
 
 (If you installed Bitcoin Core in a non-default directory, use that directory path instead.)
 
@@ -1056,9 +1027,8 @@ Save the file. The next time you login to your computer, Bitcoin Core daemon wil
 </div>
 
 {{installFinished}}
-</div>
 
-<div class="toccontent-block boxexpand expanded" markdown="1">
+
 
 ## Mac OS X Instructions
 
@@ -1164,9 +1134,6 @@ The next time you login to your desktop, Bitcoin Core daemon will be automatical
 </div>
 
 {{installFinished}}
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Upgrading Bitcoin Core
 
@@ -1188,9 +1155,6 @@ upgrade from a very old version.
 
 Sometimes downgrade is not possible because of changes to the data files. Again,
 check the release notes for the new version if you are planning to downgrade.
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Network Configuration
 
@@ -1218,9 +1182,10 @@ subsections for details.
 ### Testing Connections
 
 The BitNodes project provides an online tool to let you test whether
-your node accepts inbound connections. To use it, start Bitcoin Core
-(either the GUI or the daemon), wait 10 minutes, and then [visit the
-Bitnodes page](https://bitnodes.21.co/#join-the-network). The tool
+your node accepts inbound connections. Before using BitNodes, you must first
+ensure that your node is fully synced with the block chain. Once you've done so,
+start Bitcoin Core (either the GUI or the daemon), wait 10 minutes, and then
+[visit the Bitnodes page](https://bitnodes.21.co/#join-the-network). The tool
 will attempt to guess your IP address---if the address is wrong (or
 blank), you will need to enter your address manually.
 
@@ -1455,9 +1420,6 @@ ask for help on sites like [SuperUser](http://superuser.com).
 
 We can't provide direct support, but if you see a way to improve these
 instructions, please [open an issue.](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new)
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Configuration Tuning
 
@@ -1470,10 +1432,10 @@ limit it to using one CPU core for signature verification, you can start
 Bitcoin Core like this:
 
 {% highlight bash %}
-### Bitcoin Core daemon
+## Bitcoin Core daemon
 bitcoind -par=1 -daemon
 
-### Bitcoin Core GUI
+## Bitcoin Core GUI
 bitcoin-qt -par=1
 {% endhighlight %}
 
@@ -1586,11 +1548,6 @@ won't see incoming transactions until they've received at least one confirmation
 
 You will still be able to send transactions from the built-in wallet or from
 peers you've whitelisted using the `-whitelist` parameter.
-</div>
 
 </div>
-</div>
-</div>
-<!-- <script>updateToc();</script>
-<script>accordion();</script>
-<script>onScrollButton();</script> -->
+<script>updateToc();</script>
